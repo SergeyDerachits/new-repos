@@ -1,0 +1,17 @@
+<!doctype html>
+
+<script>
+function Accumulator(stringValue) {
+  this.Value = stringValue;
+  this.read = function () {
+    this.Value += +prompt("Сколько добавить?", 0);
+  };
+}
+let accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+alert(accumulator.Value);
+
+</script>
+
+</html>

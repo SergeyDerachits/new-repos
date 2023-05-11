@@ -1,0 +1,23 @@
+<!doctype html>
+
+<script>
+function Calculator() {
+  this.read = function () {
+    this.num1 = +prompt("Введите первое число", 0);
+    this.num2 = +prompt("Введите второе число", 0);
+  };
+  this.sum = function () {
+    return this.num1 + this.num2;
+  };
+  this.mul = function () {
+    return this.num1 * this.num2;
+  };
+}
+let calculator = new Calculator();
+calculator.read();
+alert("Сумма : " + calculator.sum());
+alert("Прозведение : " + calculator.mul());
+
+</script>
+
+</html>
