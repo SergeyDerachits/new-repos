@@ -1,0 +1,33 @@
+<!doctype html>
+
+<script>
+let user1 = {
+  name: "John",
+  salary:100,
+  age: "30"
+};
+let user2 = {
+  name: "John",
+  salary:100,
+  age: "30"
+};
+
+let users = {user1, user2}
+
+
+
+function topSalary(users) {
+
+  for(const [user] of Object.entries(users)) {
+    if  (user[age]=="30")
+    {
+      alert(user[name]);
+    }
+
+  }
+}
+
+topSalary(salaries);
+</script>
+
+</html>
